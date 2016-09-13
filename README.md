@@ -1,2 +1,4 @@
-# documentation
-Documentation related to the GIMP CI system.
+# Documentation
+
+This repository will be populated with documentation related to research for the
+GIMP build system.
