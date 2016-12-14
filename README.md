@@ -54,10 +54,27 @@ Hardware specs:
 [watchdog is configured][watchdog] on the build system to monitor the health of
 Jenkins and repair it automatically.
 
+Jenkins is installed via the [`jenkins` debian package][jenkins-debian].
+
+# What will replace build.gimp.org
+
+* [jenkins-os-packages][deb] will create a DEB package with exact version of
+  Jenkins as well as exact version of all plugins.
+* Ansible playbooks will be created to properly configure all of the different
+  parts of Jenkins.  Jenkins may be configured by a combination of [Script
+  Console Scripts][jenkins-sc] and perhaps the [Job DSL
+  plugin][jenkins-job-dsl].
+* Reuse as much code as possible which is why use of Ansible roles is
+  emphasized.
+
 [build]: https://build.gimp.org/
+[deb]: https://github.com/gimp-ci/jenkins-os-packages
 [debian]: https://www.debian.org/releases/
 [ft]: http://www.flamingtext.com/
 [gimp]: https://www.gimp.org/
 [gnome-infra]: https://mail.gnome.org/mailman/listinfo/gnome-infrastructure
 [gnome]: https://www.gnome.org/foundation/
+[jenkins-debian]: https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
+[jenkins-job-dsl]: https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin
+[jenkins-sc]: https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+Script+Console
 [watchdog]: https://github.com/gimp-ci/misc-scripts/tree/master/watchdog
