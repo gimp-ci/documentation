@@ -67,6 +67,8 @@ If you need to develop new infrastructure as code, then it should be broken out
 into Ansible roles and referenced by Ansible playbooks.  See [creating ansible
 roles](creating-ansible-roles.md).
 
+See [existing Ansible roles](https://github.com/gimp-ci?q=ansible-).
+
 [build]: https://build.gimp.org/
 [deb]: https://github.com/gimp-ci/jenkins-os-packages
 [debian]: https://www.debian.org/releases/
