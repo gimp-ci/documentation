@@ -17,12 +17,6 @@ The above goals will be met when a contributor is able to:
 1. Fully provision a Jenkins build system for building GIMP.
 2. Fully provision a GIMP development environment for contributing to GIMP.
 
-# Developing new infrastructure
-
-If you need to develop new infrastructure as code, then it should be broken out
-into Ansible roles and referenced by Ansible playbooks.  See [creating ansible
-roles](creating-ansible-roles.md).
-
 # About build.gimp.org
 
 * Point of Contact: [Sam Gleske](https://github.com/samrocketman)
@@ -66,6 +60,12 @@ Jenkins is installed via the [`jenkins` debian package][jenkins-debian].
   plugin][jenkins-job-dsl].
 * Reuse as much code as possible which is why use of Ansible roles is
   emphasized.
+
+# Developing new infrastructure
+
+If you need to develop new infrastructure as code, then it should be broken out
+into Ansible roles and referenced by Ansible playbooks.  See [creating ansible
+roles](creating-ansible-roles.md).
 
 [build]: https://build.gimp.org/
 [deb]: https://github.com/gimp-ci/jenkins-os-packages
